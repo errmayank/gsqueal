@@ -1,0 +1,29 @@
+{
+  "name": "gsqueal",
+  "private": false,
+  "version": "0.0.0",
+  "license": "MIT",
+  "author": {
+    "name": "Mayank Verma",
+    "email": "errmayank@gmail.com",
+    "url": "https://errmayank.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/errmayank/gsqueal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/errmayank/gsqueal/issues"
+  },
+  "keywords": [
+    "gcloud",
+    "sql",
+    "google cloud platform",
+    "gsqueal",
+    "cli"
+  ],
+  "packageManager": "pnpm@8.11.0",
+  "engines": {
+    "node": ">=18"
+  }
+}
