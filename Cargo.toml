@@ -1,0 +1,28 @@
+[package]
+name = "gsqueal"
+version = "0.1.0"
+description = "Minimal command line interface for Google Cloud SQL"
+license = "MIT"
+authors = ["Mayank Verma <errmayank@gmail.com>"]
+repository = "https://github.com/errmayank/gsqueal"
+homepage = "https://github.com/errmayank/gsqueal#readme"
+categories = ["command-line-interface", "command-line-utilities"]
+keywords = ["cli", "google-cloud", "gcp", "sql", "database"]
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.5.27", features = ["derive"] }
+console = { version = "0.15.10" }
+dialoguer = { version = "0.11.0" }
+dirs = { version = "6.0.0" }
+indicatif = { version = "0.17.11" }
+reqwest = { version = "0.12.12", features = ["json"] }
+serde = { version = "1.0.217", features = ["derive"] }
+serde_json = { version = "1.0.137" }
+thiserror = { version = "2.0.11" }
+tokio = { version = "1.43.0", features = ["full"] }
+
+[profile.release]
+opt-level = 3
+codegen-units = 1
+lto = "fat"
