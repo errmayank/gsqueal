@@ -7,7 +7,7 @@ async fn main() {
     let cli = Cli::parse();
 
     match &cli.command {
-        Some(RootCommands::Network { command }) => match command {
+        RootCommands::Network { command } => match command {
             Some(NetworkCommands::Update { repeat_last }) => {
                 network::update(repeat_last).await;
             }
@@ -15,6 +15,5 @@ async fn main() {
                 panic!("No network subcommand provided. Use --help to see available options.")
             }
         },
-        None => {}
     }
 }
