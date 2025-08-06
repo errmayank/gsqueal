@@ -1,6 +1,6 @@
 [package]
 name = "gsqueal"
-version = "0.1.0"
+version = "0.1.1"
 description = "Minimal command line interface for Google Cloud SQL"
 license = "MIT"
 authors = ["Mayank Verma <errmayank@gmail.com>"]
@@ -8,11 +8,7 @@ repository = "https://github.com/errmayank/gsqueal"
 homepage = "https://github.com/errmayank/gsqueal#readme"
 categories = ["command-line-interface", "command-line-utilities"]
 keywords = ["cli", "google-cloud", "gcp", "sql", "database"]
-edition = "2021"
-
-[[bin]]
-name = "gsqueal"
-path = "src/bin/main.rs"
+edition = "2024"
 
 [dependencies]
 clap = { version = "4.5.27", features = ["derive"] }
